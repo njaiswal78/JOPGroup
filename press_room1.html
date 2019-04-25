@@ -29,7 +29,6 @@
 	border-radius: .4em;
 }
 
-
 .speech-bubble:after {
 	content: '';
 	position: absolute;
@@ -178,11 +177,46 @@ width:50%;
 
 
 
-
-	
-	
-	
 	</style>
+	
+	
+	
+	<style>
+
+  
+.img_wrap {
+  position: relative;
+  }
+ 
+.img_description {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+font-size: 30px;
+line-height: 100%;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+  color:grey;
+  font-weight:bold;
+  
+}
+.img_wrap:hover .img_img{
+
+opacity:0.3;
+} 
+</style>
    
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -326,53 +360,30 @@ width:50%;
 			</div> <!-- /.flat-bottom-title -->
         	<div class="speech-bubble">
 			<br>
+			
+		
 
+<!-- Modal -->	
+
+
+
+<div class="collapse" id="collapseExample">
+  <div class="well" style="width: 100%; height: 470px;">
+  
+<iframe id="myFrame" src="https://www.televisionpost.com/airtel-digital-tv-launches-fitness-channel-fitness-studio/" style="width:100%; height:450px;"></iframe>
+
+  </div>
+</div>
+	
 			</div>
+			
+			
 			
   <!-- Container -->
   
-  
-  
-  
-  
-<!--//gallery--> 
 
-
-<style>
-
-  
-.img_wrap {
-  position: relative;
-  }
  
-.img_description {
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-font-size: 50px;
-Text-align:center;
- 
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
-}
- 
-.img_wrap:hover .img_description {
-  visibility: visible;
-  opacity: 1;
-  color:grey;
-  font-weight:bold;
-  
-}
-.img_wrap:hover .img_img{
 
-opacity:0.3;
-} 
-</style>
 			
 	<!--//gallery-->  
 		<div class="row" style="width 100%; height: auto; margin-left: 2px; margin-right: 2px;">
@@ -380,10 +391,15 @@ opacity:0.3;
           <div style="width 50%; float: left;" class="img_wrap">
 		  
 		    <img src="images/am1.jpg" alt=" " class="img-fluid img_img" />
-		         <p class="img_description">I am German Shepherd</p><br>
-			    <p class="img_description" style="border: 1px solid #00a4b0;width: 120px; height: 40px;background-color: #00a4b0;color:white;cursor: pointer;border-radius: 5px;box-shadow:0 3px black;text-align: center;vertical-align: middle;left:40%;top:50%;font-size:30px;padding-top:10px;">Watch</p>
-   
-			   </div>
+     <div class="img_description">	
+	    <p class="img_description">Airtel Digital TV launches fitness channel ‘Fitness Studio’</p><br>    	
+          <button class="btn btn-primary" stype="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+           Watch
+             </button>
+
+     </div>
+           </div>
+
 			   
 		   <div style="width 50%; float: right;" class="img_wrap">
 		      <img src="images/am2.jpg" alt=" " class="img-fluid img_img" />
@@ -392,7 +408,7 @@ opacity:0.3;
    
 			
 			</div>
-		
+			
 		   
 		</div>
 		<br>
