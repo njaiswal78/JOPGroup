@@ -19,7 +19,9 @@
     <!-- Mega menu -->
 	
     <link rel="stylesheet" type="text/css" href="css/megamenu.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <style>
 	
 	
@@ -63,9 +65,9 @@ logo{
   float: left;
   width: 50%;
   padding: 18px;
-  font-family: Lato;
+  font-family: Calibri;
   font-size: 20px;
-  height: 70px; /* Should be removed. Only for demonstration */
+  height: 70px; 
    transition: transform .2s;
 }
 
@@ -74,9 +76,10 @@ logo{
   width: 50%;
   padding-top: 5px;
   padding-bottom:5 px;
-  font-family: Lato;
+  padding-left: 15px;
+  font-family: Calibri;
   font-size: 20px;
-  height: 80px; /* Should be removed. Only for demonstration */
+  height: 80px; 
    transition: transform .2s;
 }
 
@@ -177,11 +180,46 @@ width:50%;
 
 
 
-
-	
-	
-	
 	</style>
+	
+	
+	
+	<style>
+
+  
+.img_wrap {
+  position: relative;
+  }
+ 
+.img_description {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+font-size: 30px;
+line-height: 100%;
+Text-align:center;
+ 
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+ 
+.img_wrap:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+  color:grey;
+  font-weight:bold;
+  
+}
+.img_wrap:hover .img_img{
+
+opacity:0.3;
+} 
+</style>
    
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -290,7 +328,7 @@ width:50%;
                         <div class="flat-header-socials flat-right" style="border:0px solid black;padding-right:5%;">
                             <ul>
                                 <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkediin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                                 
                             </ul>
                         </div> <!-- /.flat-header-socials -->
@@ -325,53 +363,72 @@ width:50%;
 			</div> <!-- /.flat-bottom-title -->
         	<div class="speech-bubble">
 			<br>
+			
+		<div class="container">
+  
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+		
+        <div class="modal-body">
+         <iframe id="myFrame" src="https://www.thequint.com/news/hot-news/new-fitness-channel-to-have-content-by-shilpa-yuvraj" style="width:100%; height:500px;"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+
+<!-- Modal -->	
+
+
+
+<div class="collapse" id="collapseExample">
+  <div class="well" style="width: 100%; height: 470px;">
+  
+<iframe id="myFrame" src="https://www.televisionpost.com/airtel-digital-tv-launches-fitness-channel-fitness-studio/" style="width:100%; height:450px;"></iframe>
+
+  </div>
+</div>
+	
 			</div>
+			
+			
 			
   <!-- Container -->
   
-  
-  
-  
-  
-<!--//gallery--> 
+  <script>
+document.getElementById("myFrame").addEventListener("load", myFunction);
 
-
-<style>
-
-  
-.img_wrap {
-  position: relative;
-  }
- 
-.img_description {
-  position: absolute;
-  top: 40%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-font-size: 50px;
-Text-align:center;
- 
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2s;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Iframe is loaded.";
 }
- 
-.img_wrap:hover .img_description {
-  visibility: visible;
-  opacity: 1;
-  color:grey;
-  font-weight:bold;
-  
-}
-.img_wrap:hover .img_img{
+</script>
 
-opacity:0.3;
-} 
-</style>
+  <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+  
+  function check(){
+$('#b').load('test.html #target');
+}
+}
+</script>
+
 			
 	<!--//gallery-->  
 		<div class="row" style="width 100%; height: auto; margin-left: 2px; margin-right: 2px;">
@@ -379,19 +436,26 @@ opacity:0.3;
           <div style="width 50%; float: left;" class="img_wrap">
 		  
 		    <img src="images/am1.jpg" alt=" " class="img-fluid img_img" />
-		         <p class="img_description">I am German Shepherd</p><br>
-			    <p class="img_description" style="border: 1px solid #00a4b0;width: 120px; height: 40px;background-color: #00a4b0;color:white;cursor: pointer;border-radius: 5px;box-shadow:0 3px black;text-align: center;vertical-align: middle;left:40%;top:50%;font-size:30px;padding-top:10px;">Watch</p>
-   
-			   </div>
+     <div class="img_description">	
+	    <p class="img_description">Airtel Digital TV launches fitness channel ‘Fitness Studio’</p><br>    	
+          <button class="btn btn-primary" stype="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" >
+           Watch
+             </button>
+
+     </div>
+           </div>
+
 			   
 		   <div style="width 50%; float: right;" class="img_wrap">
 		      <img src="images/am2.jpg" alt=" " class="img-fluid img_img" />
-		         <p class="img_description">I am German Shepherd</p><br>
-			    <p class="img_description" style="border: 1px solid #00a4b0;width: 120px; height: 40px;background-color: #00a4b0;color:white;cursor: pointer;border-radius: 5px;box-shadow:0 3px black;text-align: center;vertical-align: middle;left:40%;top:50%;font-size:30px;padding-top:10px;">Watch</p>
-   
+			  <div class="img_description">
+			  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Watch</button>
+		         <p class="img_description">
+New fitness channel to have content by Shilpa, Yuvraj</p><br>
+			     </div>
 			
 			</div>
-		
+			
 		   
 		</div>
 		<br>
