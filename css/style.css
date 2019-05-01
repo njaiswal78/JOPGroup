@@ -117,7 +117,15 @@ img {
 	max-width: 100%;
     height: auto;
 }
-
+#img1 {
+	width: 100%;
+	max-width: 150px;
+	margin-top: 1%;
+	
+	position: absolute;
+    height: auto;
+    border: 0px Black solid;
+}
 img.img-left {
 	margin: 7px 0px 25px 0 !important;
 	float: left;

@@ -57,22 +57,31 @@ logo{
 }
 
 
-.col {
-  float: right;
+.col 
+{
+  float: left;
   width: 50%;
-  padding-top: 1.5%;
+  padding: 18px;
   font-family: Arial;
-  font-size: 18px;
-  transition: transform .2s;
+  padding-right: 10px;
+  font-size: 16px;
+  height: 70px; /* Should be removed. Only for demonstration */
+   transition: transform .2s;
+  
+  
 }
 
 .col2 {
   float: left;
   width: 50%;
-  padding-top: 1%;
-  font-family: Arial;
+  padding-top: 2px;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  font-family: Lato;
   font-size: 18px;
+  height: 80px; /* Should be removed. Only for demonstration */
   transition: transform .2s;
+   
 }
 
 /* Clear floats after the columns */
@@ -221,16 +230,16 @@ width:50%;
 		           	<div class="container">
 			        	<div class="row">
 						<div class="col2">
-				         	<div  class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center">
-					           	<img src="images/1.png"><a href="index.html"></a>
+				         	   	<div>
+					           	<img src="images/1.png" id="img1"><a href="index.html"></a>
 					                   </div>
 									   </div>
 									   
 									   <div class="col">
-			<p style="margin-top:2px;font-weight: bold;color:#00a4b0;margin-right:; margin-left:330px; border:0px solid black;padding-left:-5%; padding-bottom: 5px;">
-			Info@Jopgroup.in</p>
+			<p style="margin-top:2px;font-weight: bold;color:#00a4b0; margin-left: 300px; border:0px solid black;padding-left:-5%; padding-bottom: 5px;">
+			info@jopgroup.in</p>
 			<div style="margin-top: -15px;">
-			<p style="margin-top:2px; font-weight: bold;color:#00a4b0;margin-right:; margin-left:330px; border:0px solid black;padding-left:-5%; padding-bottom: 5px;"> 011 47323166 </p> 	</div>	</div>
+			<p style="margin-top:2px;font-weight: bold;color:#00a4b0; margin-left: 300px; border:0px solid black;padding-left:-5%; padding-bottom: 5px;"> 011 47323166 </p> 	</div>	</div>
 										
 					<!-- <a class="logo font-italic font-weight-bold col-lg-4 text-lg-left text-center" href="index.html">LIFEMANTRA</a><br> -->
 					
@@ -452,6 +461,7 @@ width:50%;
 		#footer1{
 		height:1000px;
 		}
+		
 		#b1{
 		width:80%;
 		
