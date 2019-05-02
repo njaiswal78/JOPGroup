@@ -1591,6 +1591,14 @@ pre code {
   .container {
     width: 970px;
   }
+	.container h3 {
+    font: 25px/30px 'Poppins', sans-serif;
+	color:#000;
+	font-weight:600;
+  }
+  }
+  
+  
 }
 @media (min-width: 1200px) {
   .container {
