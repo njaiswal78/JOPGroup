@@ -1,0 +1,1 @@
+!window.jQuery && document.write('<script src="lightbox/jquery-1.4.3.min.js"><\/script>');
