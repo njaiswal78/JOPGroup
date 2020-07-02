@@ -1,6 +1,56 @@
 <!DOCTYPE html>
     <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
     <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<?php
+    if (isset($_POST['submit'])){
+
+require_once('PHPmailer/PHPMailerAutoload.php');
+
+$name=$_POST["name"];
+$email=$_POST["email"];
+$subject=$_POST["subject"];
+$message=$_POST["message"];
+
+
+
+$mail=new PHPMailer();
+$mail->isSMTP();
+$mail->SMTPAuth='true';
+$mail->SMTPSecure='ssl';
+$mail->Host="smtp.gmail.com";
+//$mail->Host="smtp.hostinger.in";
+
+$mail->Port='465';
+$mail->isHTML();
+$mail->Username="socialplayerdotin@gmail.com";
+$mail->Password='natrajan807';
+$mail->SetFrom('urvi@jopgroup.in');
+$mail->AddReplyTo($email);
+$mail->FromName=$name;
+$mail->Subject="New Message from JOP Group Media Contact Form";
+$email_content = "Name: $name <br>";
+$email_content .= "Email: $email <br>";
+$email_content .= "Subject: $subject <br>";
+$email_content .= "Message: $message ";
+
+$mail->Body=$email_content;
+$mail->addAddress('njaiswal78@gmail.com');
+$mail->addAddress('priyankasingh2993@gmail.com');
+if(!$mail->Send())
+{
+   echo "Error sending: " . $mail->ErrorInfo;
+}
+else
+{
+    echo '<script>';
+    echo 'alert("We got your request and we will reach you within 48 hours. ")';
+    echo '</script>';
+    echo "<p style='text-align:center;'>We got your request and we will reach you within 48 hours.</p>";
+}
+}
+?>
+
+
 <head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
@@ -362,7 +412,7 @@ width:50%;
 
 
 
-<form action="" method="post" role="form" class="contactForm" style="margin-left: 10%;margin-right: 12.5%;margin-top: 5%">
+<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" role="form" class="contactForm" style="margin-left: 10%;margin-right: 12.5%;margin-top: 5%">
             <div class="form-row" style="margin-left: -1%;margin-right: -1%">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
@@ -381,7 +431,7 @@ width:50%;
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit" style="background-color: #00a4b0;margin: 2%;border-radius: 5px;">Send Message</button></div>
+            <div class="text-center"><button type="submit" style="background-color: #00a4b0;margin: 2%;border-radius: 5px;" name="submit">Send Message</button></div>
           </form>
 
 
