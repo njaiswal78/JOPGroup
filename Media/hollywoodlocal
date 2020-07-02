@@ -341,7 +341,7 @@ width:50%;
     <div class="tp-banner-container" id="home">
         <div class="tp-banner" >
            
-<img id="img1" src="images/HMB.png" style="width: 100%; height: auto; margin-top: 52px;" />
+<img id="img1" src="images/banner-hollywood.png" style="width: 100%; height: auto; margin-top: 52px;" />
 
 <!--- Slider Overlay
 <div class="overlay" style="color: white;font-size: 30px;line-height: normal;text-align: justify;border: solid 0px black;">
