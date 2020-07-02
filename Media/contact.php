@@ -260,7 +260,12 @@ width:50%;
        <script src="javascript/html5shiv.js"></script>
        <script src="javascript/respond.min.js"></script>
     <![endif]-->
-   
+   <script>
+    if ( window.history.replaceState ) {
+        window.history.replaceState( null, null, window.location.href );
+    }
+</script>
+
 </head>
 <body>
 
