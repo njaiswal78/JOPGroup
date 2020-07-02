@@ -24,7 +24,6 @@
 	
 	.section a{
 	text-align: center;
-	align: cneter;
 	text-decoration: none;
 	
 	padding-top: 22px;
@@ -38,7 +37,7 @@
 	border-radius: 10px;
 	
 	}
-	
+	/*
 	.video-container{
 	position:absolute;
 	top: 0;
@@ -47,13 +46,23 @@
 	
 	
 	}
-
+*/
 	
 	.section-item{
-	margin-left: 36%;
+		position: block;
+		margin-right: auto;
+		margin-left: auto;
 	z-index: 1;
 	}
+	.section-item a{
+		float: left;
+		opacity: 0.8;
+	}
+	.section-item a:hover{
+		opacity: 1;
+	}
 	
+	/*
 	@media (min-aspect-ratio: 16/9){
 	#videoBG {
 	width: 100%;
@@ -69,7 +78,30 @@
 	}
 	
 	}
-	
+	*/
+	.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+.video-container video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;
+
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 	
 	
 	
