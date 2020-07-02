@@ -7,14 +7,24 @@
 <link rel="shortcut icon" href="images/favicon.ico">
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-<!--[if lte IE 8]>
-<script src="js/iehack.js" type="text/javascript"></script>
-[if lt IE 9]><script src="js/html5.js"></script>
-[if (lt IE 9) & (!IEMobile)]>
-<link rel="stylesheet" href="tools/style.css" media="all">
-[if lt IE 7]>
-<script defer type="text/javascript" src="js/pngfix.js"></script>
-<![endif]-->
+<style>
+.column {
+  float: left;
+  width: 30.33%;
+  padding: 10px;
+  height: auto; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+
 <link href="tools/reset.css" media="all" rel="stylesheet">
 <link href="tools/fonts.css" media="all" rel="stylesheet">
 <link href="tools/style.css" media="all" rel="stylesheet">
@@ -47,12 +57,13 @@
                   <li><a href="#">J.S. Arcade</a></li>
                   <li><a href="#">JOP Square</a></li>
                   <li><a href="#">Roots Tower</a></li>
+				   <li><a href="jopsquare-liberty.html">Liberty JOP</a></li>
+                  <li><a href="jopsquare-yamunanagar.html">JOP Square</a></li>
                 </ul>
               </li>
               <li><a href="#">Ongoing &raquo;</a>
                 <ul>
-                  <li><a href="jopsquare-liberty.html">Liberty JOP</a></li>
-                  <li><a href="jopsquare-yamunanagar.html">JOP Square</a></li>
+                 
                   <li><a href="joppalms.html">JOP palms</a></li>
                 </ul>
               </li>
@@ -65,8 +76,8 @@
               </li>
             </ul>
           </li>
-          <li><a href="#">Career</a></li>
-          <li><a href="#">Clientele</a></li>
+          <li><a href="career.html">Career</a></li>
+         
           <li><a href="contact.html" class="last">Contact Us</a></li>
         </ul>
       </nav>
@@ -76,17 +87,18 @@
       <div id="slider">
         <div id="mover">
           <div id="slide-1" class="slide">
-            <h1>Commitment</h1>
-            <p>Yes we stand for commitment. The sheer number of our completed projects stand as testimony for us. But more than that it has created a huge base of loyal customers who are our greatest strength.</p>
+            <h1>Welcome to JOP Group</h1>
+            <p>Pioneers of real estate with projects both residential as well as commercial all over North India. JOP was the name to reckon with even before the realty boom revolutionized the life of common man. Even before the mall and multiplex boom took off JOP was the leading name in realty and boasted of projects that transformed people’s life in a big way. With years of experience JOP has transformed to become a futuristic organization aiming to bring the best of international standards in India.</p>
             <a href="#"><img src="images/banner/pic1.png" alt=""></a> </div>
-          <div class="slide">
+          <!--<div class="slide">
             <h1>Conviction</h1>
             <p>As harbingers of real estate revolution we always deliver what we promise. Timely delivery and adherence to strict construction quality is what we take immense pride upon.</p>
-            <a href="#"><img src="images/banner/pic2.png" alt=""></a> </div>
-          <div class="slide">
+            <a href="#"><img src="images/banner/pic2.png" alt=""></a> </div> --->
+			
+         <!--- <div class="slide">
             <h1>Care</h1>
             <p>We nurture our projects and customers as a gardener cares for its plants. We routinely fly to international real estate hubs to seek inspiration and give our customers the best buildings here in India.</p>
-            <a href="#"><img src="images/banner/pic3.png" alt=""></a> </div>
+            <a href="#"><img src="images/banner/pic3.png" alt=""></a> </div>--->
         </div>
       </div>
     </div>
@@ -94,9 +106,32 @@
     <!--Matter Container starts here-->
     <div class="matter-cont">
       <section class="intromtr">
-        <h1>Welcome to JOP Group</h1>
-        <p>Pioneers of real estate with projects both residential as well as commercial all over North India. JOP was the name to reckon with even before the realty boom revolutionized the life of common man. Even before the mall and multiplex boom took off JOP was the leading name in realty and boasted of projects that transformed people’s life in a big way. With years of experience JOP has transformed to become a futuristic organization aiming to bring the best of international standards in India.</p>
-      </section>
+	  
+	  <div class="container">
+	  <div class="row">
+	  <div class="column">
+        <h1 style="font-size: 25px;"><b>Commitment</b></h1>
+		<br>
+        <p>Yes we stand for commitment. The sheer number of our completed projects stand as testimony for us. But more than that it has created a huge base of loyal customers who are our greatest strength</p>
+     </div> 
+	 
+	   <div class="column">
+        <h1 style="font-size: 25px;"><b>Conviction</b></h1>
+		<br>
+        <p>As harbingers of real estate revolution we always deliver what we promise. Timely delivery and adherence to strict construction quality is what we take immense pride upon.</p>
+     </div> 
+	 
+	 <div class="column">
+      <h1 style="font-size: 25px;"><b>Care</b></h1>
+		<br>
+        <p>We nurture our projects and customers as a gardener cares for its plants. We routinely fly to international real estate hubs to seek inspiration and give our customers the best buildings here in India.</p>
+     </div> 
+	 
+	 
+	 </div>
+</div>
+
+	 </section>
       <section class="boxwrap">
         <div class="boxcont"> <img src="images/profile-pic.jpg" width="300" height="150" alt="">
           <h1><a href="about.html">Company Profile</a></h1>
