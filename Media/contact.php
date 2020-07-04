@@ -340,7 +340,7 @@ width:50%;
                                             </li>
                                             
                                             </li>
-                                            <li><a href="contact.html">Contact Us</a></li>
+                                            <li><a href="contact.php">Contact Us</a></li>
                                             <li><a href="press_room.html">Press Room</a>
                                                 
                                             </li>                        
@@ -394,7 +394,7 @@ width:50%;
     <img src="images/loc.png" width="30px" height="50px" style="margin-top: 20%"><br><br>
     <h2 style="color: grey;font-weight: bold;margin-top:0;">ADDRESS</h2>
 
-    <p style="color: black;font-size: 15px;">84, Rohtak Rd, Avtar Enclave, Paschim Vihar, Delhi, 110063</p>
+    <p style="color: black;font-size: 15px;">32, 2nd Floor, NWA, Club Road, Punjabi Bagh West, New Delhi-110026</p>
   </div>
   <div class="column" style="background-color:white;text-align: center; border-left: 1px solid grey; float: left; width: 25%%; padding: 10px; height: 300px;">
     <img src="images/phone.png" width="30px" height="50px" style="margin-top: 20%"><br><br>
@@ -446,7 +446,7 @@ width:50%;
                             <a href="index.html"><font color="black">About JOP GROUP</font></a> &nbsp &nbsp <font color="white">|</font>
                             <a href="ourcontent.html"><font color="black">Our Content</font></a>&nbsp &nbsp <font color="white">|</font>
                             <a href="press_room.html"><font color="black">Press Room</font></a>&nbsp &nbsp <font color="white">|</font>
-                            <a href="contact.html"><font color="black">ContactUs</font></a> &nbsp &nbsp <font color="white">|</font>
+                            <a href="contact.php"><font color="black">ContactUs</font></a> &nbsp &nbsp <font color="white">|</font>
                         </div> <!-- /.flat-cash -->
                     </div>
 					
