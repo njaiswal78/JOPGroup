@@ -399,7 +399,7 @@ width:50%;
     <img src="images/loc.png" width="30px" height="50px" style="margin-top: 20%"><br><br>
     <h2 style="color: grey;font-weight: bold;margin-top:0;">ADDRESS</h2>
 
-    <p style="color: black;font-size: 15px;">84, Rohtak Rd, Avtar Enclave, Paschim Vihar, Delhi, 110063</p>
+   <a href="https://goo.gl/maps/CN7YUEmDCno6mqRKA"> <p style="color: black;font-size: 15px;">32, 2nd Floor, NWA, Club Road, Punjabi Bagh West, New Delhi-110026</p></a>
   </div>
   <div class="column" style="background-color:white;text-align: center; border-left: 1px solid grey; float: left; width: 25%%; padding: 10px; height: 300px;">
     <img src="images/phone.png" width="30px" height="50px" style="margin-top: 20%"><br><br>
