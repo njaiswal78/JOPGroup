@@ -2,6 +2,7 @@
     <!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
     <!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
 <head>
+	
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
     <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
@@ -108,8 +109,9 @@
 	
 	
 	</style>	
-   
-</head>
+
+
+	</head>
 <body scroll="no" style="overflow: hidden">
 
 
@@ -119,11 +121,11 @@
 	<div class="video-container" id="videoBG" style="z-index: -1;">
 	
     <!-- <video width="auto" height="auto" controls autoplay>-->
-<audio autoplay>
-  <source src="1.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
 
+<iframe src="silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+<audio id="audio" autoplay>
+  <source src="1.mp3">
+</audio>
 	<video autoplay loop muted poster="background.png">
   <source src="1.mp4" type="video/mp4">
   	
